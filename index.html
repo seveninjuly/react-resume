@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="The resume of Sally Student">
+	<title>Sally Student resume</title>
+</head>
+
+<body>
+	<div id="application-root"></div>
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js" crossorigin></script>
+	<script type="text/babel">
+	  
+	  function App() {
+        return (
+		  <main>
+			<header>
+			   <h1>Sally Student resume</h1>
+			</header>
+			
+			<address class="contact">
+			   <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" width="250" height="370" alt="The image of Sally Student"/>
+      	       <h2>Contact Information</h2>
+               <p>Name: Sally</p>
+               <p>Email: <a href="mailto:123@gmail.com" target="_blank">123@gmail.com</a></p>
+               <p>Phone number: 123-456-7890</p>
+            </address>
+
+            <section class="education">
+      	       <h2>Education</h2>
+      	         <ul>
+      	 	        <li>First Highschool</li>
+      	 	        <li>Best University</li>
+      	         </ul>
+            </section>
+
+            <section class="employment">
+      	       <h2>Employment History</h2>
+      	         <ul>
+      	 	       <li>A company, Assistant, 201x-201x
+      	 		       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est iusto doloribus consectetur fugit quis accusantium hic assumenda, dolorem autem dolor voluptatibus dolore sunt sed labore neque, saepe illum et.</p>
+      	 	       </li>
+      	 	       <li>B company, Manager, 201x-201x
+      	 		       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa est iusto doloribus consectetur fugit quis accusantium hic assumenda, dolorem autem dolor voluptatibus dolore sunt sed labore neque, saepe illum et.</p>
+      	 	       </li>
+      	         </ul>
+            </section>
+		</main>
+        );
+      }
+      ReactDOM.render(<App />, document.querySelector("#application-root"));
+    </script>
+</body>
+
+</html>
